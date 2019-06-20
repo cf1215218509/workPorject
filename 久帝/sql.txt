@@ -1,0 +1,4 @@
+update formtable_main_190_dt1 set taxAmount = a.je 
+from (select mainid,dysjxch,SUM(je) je from formtable_main_190_dt2 b  
+inner join formtable_main_190 c on b.mainid = c.id where c.requestid = 6015  
+group by mainid,dysjxch) a  where formtable_main_190_dt1.mainid = a.mainid and formtable_main_190_dt1.itemNo1 = a.dysjxch

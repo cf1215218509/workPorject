@@ -1,0 +1,19 @@
+function addrc(){
+	 var idr = _xtable_CheckedCheckboxId();
+	 var myurl = "/interface/data/rckcf.jsp?id=" + idr;	 
+	 jQuery.post(myurl, function(data) {
+		var retss = eval("(" + data + ")");
+        
+		for (var i = 0; i < retss.length; i++) {
+			var result = retss[i].result;	
+			
+			if(result=='true'){
+				alert("添加成功！");
+			}else{
+				alert("添加失败！");
+			}
+	    
+		}
+		
+	 });
+    }

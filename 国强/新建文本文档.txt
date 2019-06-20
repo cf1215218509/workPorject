@@ -1,0 +1,1 @@
+<input type=button class="e8_btn_top" onclick="addrc(this)" value="添加到人才库"></input>

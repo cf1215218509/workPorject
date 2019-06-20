@@ -1,0 +1,58 @@
+<!-- script代码，如果需要引用js文件，请使用与HTML中相同的方式。 -->
+<script type="text/javascript">
+function comp(){
+	var flag = "";
+	jQuery("input[id^='field8357_']").each(function(i){
+		var id = jQuery(this).attr("name").split("_")[1];
+		var ky = $.trim(jQuery("#field8357_"+id).val())==""?0:parseInt(jQuery("#field8357_"+id).val());
+		if(ky > 0){
+			flag = flag + (i+1) +",";
+		}
+	});
+	return flag;
+}
+	
+jQuery(document).ready(function(){
+	checkCustomize = function (){
+
+		var a = comp();
+		if(a == ""){
+			return true;
+		}else{
+			alert("第"+a+"行明细超出");
+			return false;
+		}
+
+    }
+}); 
+
+$(document).click(function(){
+$("input[id^='field8357_']").each(function(){
+var result = $(this).val();
+if(result>0){
+$(this).val(1);
+}
+
+})
+
+})
+   
+
+
+jQuery(function(){
+	jQuery('button[name^=addbutton]').each(function(){
+		jQuery(this).bind('click',function(){
+			var name = jQuery(this).attr('name');
+			var index = name.substring(9); //明细表顺序
+			var nodesnum = parseInt(jQuery("#nodesnum"+index).val(),10) - 1;
+
+			if(nodesnum>0){
+				copyrow(index);
+			}
+
+		});
+	})
+})
+</script>
+
+field7308_0
