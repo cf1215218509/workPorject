@@ -1,9 +1,0 @@
-<module id="sms" version="1.0.0">
-    <service-point id="smssender" interface="weaver.sms.SmsService">
-        <invoke-factory>
-            <construct class="weaver.sms.smscf">
-            </construct>
-        </invoke-factory>
-    </service-point>   
-</module>
-
